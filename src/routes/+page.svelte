@@ -100,8 +100,6 @@
 	}
 </script>
 
-<h1>Select Characters</h1>
-<div class="relative">
 	<Button 
 		class="gap-1 w-full min-h-[50px] flex-wrap {selectedCharacters.length > 0
 			? 'justify-start'
@@ -133,7 +131,7 @@
 					/>
 					<Label for="checkbox-{character.id}" class="flex grow">
 						<img
-							alt={character.name}
+							alt={character.name}	
 							src={character.image}
 							class="aspect-square rounded w-10 h-10 bg-gray-200 dark:bg-gray-600 {characterImageLoaded[
 								character.id
@@ -157,4 +155,3 @@
 			</li>
 		{/if}
 	</Dropdown>
-</div>

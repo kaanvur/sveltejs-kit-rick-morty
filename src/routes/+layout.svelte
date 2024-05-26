@@ -1,15 +1,11 @@
 <script>
-	import Menu from '$lib/components/menu/Menu.svelte';
-	import Footer from '$lib/components/footer/Footer.svelte';
 	import '../app.css';
+	import { DarkMode } from 'flowbite-svelte';
 </script>
 
-<div class="flex flex-col min-h-screen">
-	<Menu />
+<DarkMode />
 
-	<main class="flex flex-col flex-1 p-4 w-full box-border max-w-5xl mt-0 mb-0 ml-auto mr-auto">
+	<main class="max-w-lg mx-auto grid min-h-screen place-items-center relative">
 		<slot />
 	</main>
 
-	<Footer />
-</div>
